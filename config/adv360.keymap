@@ -9,11 +9,12 @@
  * edit it directly.
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &sk { quick-release; };
@@ -92,11 +93,11 @@
 
         layer_m_rthumb {
             bindings = <
-&none  &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none     &none     &none
-&none  &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT  &none     &none
-&none  &kp PIPE     &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp EXCL  &none
-&none  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &kp AMPS   &kp LBRC  &kp RBRC  &kp AT    &none
-&none  &none        &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none     &none     &none
+&none   &none        &none       &none      &none      &none  &none                                          &none   &none  &none      &none     &none     &none     &none
+&none   &none        &kp TILDE   &kp PLUS   &kp CARET  &none  &none                                          &none   &none  &kp GRAVE  &kp LBKT  &kp RBKT  &none     &none
+&none   &kp PIPE     &kp DOLLAR  &kp BSLH   &kp UNDER  &none  &none  &none      &none          &none  &none  &none   &none  &kp EQUAL  &kp LPAR  &kp RPAR  &kp EXCL  &none
+&trans  &kp PERCENT  &kp HASH    &kp MINUS  &kp ASTRK  &none                    &none          &none                 &none  &kp AMPS   &kp LBRC  &kp RBRC  &kp AT    &none
+&none   &none        &none       &none      &none             &none  &kp SPACE  &kp LCTRL      &none  &none  &trans         &none      &none     &none     &none     &none
             >;
         };
 
